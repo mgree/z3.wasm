@@ -1,8 +1,11 @@
+.DS_Store
 /.vagrant/
 /build/
 /dist/
 /html/z3w.js
 /html/z3w.wasm
+/html/z3smt2w.js
+/html/z3smt2w.wasm
 /provision.log
 /upload.sh
 /z3.wasm.tar.gz

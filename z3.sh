@@ -139,10 +139,10 @@ say '* Emscripten: stdlib (very slow!)'; {
 
 cd "$Z3_ROOT"
 
-Z3_CONFIGURE_OPTS=(--staticlib --staticbin --noomp --x86)
+Z3_CONFIGURE_OPTS=(--staticlib --staticbin --x86 --single-threaded)
 
 say '* Z3: configure (slow!)'; {
-    emconfigure python scripts/mk_make.py "${Z3_CONFIGURE_OPTS[@]}"
+    emconfigure ./configure "${Z3_CONFIGURE_OPTS[@]}"
 }
 
 say '* Z3: make standalone (very slow!)'; {
